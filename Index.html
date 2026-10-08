@@ -1,0 +1,1071 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UP Jal Nigam | Public Service Portal</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap-grid.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- Skip link for WCAG -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- TOP ACCESSIBILITY BAR -->
+    <header class="top-utility">
+      <div class="container">
+        <div class="utility-wrapper">
+          <div class="utility-left">
+            <span class="badge-gov">Govt. of Uttar Pradesh</span>
+            <span class="toll-free"
+              ><i class="bi bi-telephone-fill"></i> Toll Free:
+              1800-180-5678</span
+            >
+          </div>
+          <div class="utility-right">
+            <div class="font-resizer">
+              <span class="resizer-label">Font:</span>
+              <button type="button" id="btn-decrease">A-</button>
+              <button type="button" id="btn-reset">A</button>
+              <button type="button" id="btn-increase">A+</button>
+            </div>
+            <button type="button" class="btn-contrast" id="btn-contrast">
+              <i class="bi bi-circle-half"></i> Contrast
+            </button>
+            <div class="lang-switch">
+              <a href="#" class="active">English</a>
+              <span>|</span>
+              <a href="#">हिन्दी</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- BRAND IDENTITY HEADER -->
+    <header class="brand-header">
+      <div class="container">
+        <div class="brand-wrapper">
+          <div class="brand-identity">
+            <!-- UP Government Emblem -->
+            <img
+              src="assets/up-logo.png"
+              alt="Uttar Pradesh Government Emblem"
+              class="img-up-seal"
+            />
+
+            <!-- UP Jal Nigam Official Brand -->
+            <img
+              src="assets/upjn-logo.png"
+              alt="UP Jal Nigam Official Logo"
+              class="img-upjn-logo"
+            />
+
+            <div class="brand-divider"></div>
+            <!-- <div class="brand-logo-circle">
+              <i class="bi bi-water"></i>
+            </div> -->
+            <div class="brand-text">
+              <h1 class="brand-title">उत्तर प्रदेश जल निगम (U.P. Jal Nigam)</h1>
+              <p class="brand-subtitle">
+                Department of Drinking Water & Sanitation, Govt. of Uttar
+                Pradesh
+              </p>
+            </div>
+          </div>
+          <div class="brand-badges">
+            <div class="badge-card">
+              <i class="bi bi-droplet-half text-cyan"></i>
+              <div>
+                <span class="badge-title">Har Ghar Jal</span>
+                <small class="badge-desc">Jal Jeevan Mission</small>
+              </div>
+            </div>
+            <div class="badge-card">
+              <i class="bi bi-patch-check-fill text-gold"></i>
+              <div>
+                <span class="badge-title">ISO 9001:2015</span>
+                <small class="badge-desc">Certified Portal</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN NAVIGATION BAR -->
+    <nav class="main-navbar">
+      <div class="container">
+        <div class="nav-wrapper">
+          <ul class="nav-menu" id="nav-menu">
+            <li class="nav-item">
+              <a href="#" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About Nigam</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link">Citizen Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#schemes" class="nav-link">Key Schemes</a>
+            </li>
+            <li class="nav-item">
+              <a href="#tenders" class="nav-link">Tenders & Orders</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">RTI</a></li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <div class="nav-search">
+            <input
+              type="text"
+              placeholder="Search Consumer No, Tender ID..."
+              aria-label="Search"
+            />
+            <button type="button" aria-label="Submit search">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+          <button
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-label="Toggle mobile menu"
+          >
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- =================================================================
+         HERO SECTION (LEFT: INTRO & CTAs | RIGHT: ANNOUNCEMENTS)
+         ================================================================= -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7 col-md-12">
+            <div class="hero-content">
+              <span class="hero-tag">
+                <i class="bi bi-shield-fill-check"></i> Har Ghar Jal Mission
+                &amp; AMRUT 2.0
+              </span>
+              <h2 class="hero-title">
+                Safe &amp; Reliable Tap Water for Every Citizen
+              </h2>
+              <p class="hero-desc">
+                Committed to delivering potable tap water connections across all
+                75 districts and constructing modern, scientific wastewater
+                treatment infrastructure in Uttar Pradesh.
+              </p>
+              <div class="hero-actions">
+                <a href="#services" class="btn-hero-primary">
+                  <i class="bi bi-droplet-fill"></i> Apply for Water Connection
+                </a>
+                <a href="#tenders" class="btn-hero-secondary">
+                  <i class="bi bi-file-earmark-text"></i> Explore Active Tenders
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column (Latest Announcements Card) -->
+          <div class="col-lg-5 col-md-12">
+            <div class="hero-notice-card">
+              <div class="notice-card-header">
+                <div class="header-left">
+                  <i class="bi bi-megaphone-fill text-danger"></i>
+                  <h3 class="notice-title">Latest Announcements</h3>
+                </div>
+                <span class="live-dot" title="Live updates"></span>
+              </div>
+
+              <ul class="notice-list">
+                <li class="notice-item">
+                  <div class="notice-meta">
+                    <span class="badge-new">NEW</span>
+                    <time class="notice-date">08-Oct-2026</time>
+                  </div>
+                  <a href="#" class="notice-link">
+                    Expression of Interest for Smart Water Metering Project in
+                    Tier-2 Municipal Corporations.
+                  </a>
+                </li>
+
+                <li class="notice-item">
+                  <div class="notice-meta">
+                    <time class="notice-date">05-Oct-2026</time>
+                  </div>
+                  <a href="#" class="notice-link">
+                    Standard Operating Procedures (SOP) for automated Sewage
+                    Treatment Plants along Ganga Basin.
+                  </a>
+                </li>
+
+                <li class="notice-item">
+                  <div class="notice-meta">
+                    <time class="notice-date">01-Oct-2026</time>
+                  </div>
+                  <a href="#" class="notice-link">
+                    Final Merit List: Empanelment of Junior Engineers (Civil
+                    &amp; Mechanical) for Rural Projects.
+                  </a>
+                </li>
+              </ul>
+
+              <div class="notice-card-footer">
+                <a href="#tenders" class="notice-more-link">
+                  View All Orders &amp; Circulars
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SECTION: CITIZEN SERVICES HUB (5 CARDS INCL. PAY BILL)
+         ================================================================= -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-title-wrap">
+          <span class="sub-badge">Single Window Access</span>
+          <h2 class="section-heading">Citizen Centric Online Services</h2>
+          <div class="title-decor-line"></div>
+          <p class="section-subtext">
+            Direct public access for water billing, fresh pipeline connections,
+            and quick grievance redressal.
+          </p>
+        </div>
+
+        <!-- Services Grid (Custom Row Layout) -->
+        <div class="row g-4 justify-content-center">
+          <!-- Card 1: Pay Water Bill (High Priority) -->
+          <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12">
+            <div class="service-box service-box-bill">
+              <div class="service-icon-wrap icon-amber">
+                <i class="bi bi-receipt-cutoff"></i>
+              </div>
+              <h3 class="service-title">Pay Water Bill</h3>
+              <p class="service-desc">
+                Instant online payment for municipal water &amp; sewerage
+                consumption dues.
+              </p>
+              <a href="#" class="service-action-link">Pay Online &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Card 2: New Water Connection -->
+          <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12">
+            <div class="service-box">
+              <div class="service-icon-wrap icon-blue">
+                <i class="bi bi-droplet-half"></i>
+              </div>
+              <h3 class="service-title">New Connection</h3>
+              <p class="service-desc">
+                Apply online for fresh domestic, commercial, or institutional
+                supply lines.
+              </p>
+              <a href="#" class="service-action-link">Apply Now &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Card 3: Sewerage Permission -->
+          <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12">
+            <div class="service-box">
+              <div class="service-icon-wrap icon-teal">
+                <i class="bi bi-recycle"></i>
+              </div>
+              <h3 class="service-title">Sewer Connection</h3>
+              <p class="service-desc">
+                Obtain legal drainage connection approval to municipal sewer
+                mains.
+              </p>
+              <a href="#" class="service-action-link">Apply Online &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Card 4: Jansunwai Grievance -->
+          <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12">
+            <div class="service-box">
+              <div class="service-icon-wrap icon-red">
+                <i class="bi bi-headset"></i>
+              </div>
+              <h3 class="service-title">Lodge Complaint</h3>
+              <p class="service-desc">
+                Register complaints for pipeline leakages, dirty supply, or
+                meter faults.
+              </p>
+              <a href="#" class="service-action-link">File Grievance &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Card 5: Water Quality Lab Reports -->
+          <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12">
+            <div class="service-box">
+              <div class="service-icon-wrap icon-green">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <h3 class="service-title">Quality Lab Test</h3>
+              <p class="service-desc">
+                Check certified NABL water purity testing lab reports across 75
+                districts.
+              </p>
+              <a href="#" class="service-action-link">View Reports &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SECTION: IMPACT STATS COUNTER BAR
+         ================================================================= -->
+    <section class="stats-counter-section">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <!-- Stat 1: Districts -->
+          <div class="col-xl-3 col-md-6 col-sm-6 col-12">
+            <div class="stat-item-box">
+              <div class="stat-icon-wrap">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div class="stat-content">
+                <div class="stat-digit-wrap">
+                  <span class="stat-number">75</span>
+                </div>
+                <h4 class="stat-label">Districts Covered</h4>
+                <p class="stat-subtext">Across Entire Uttar Pradesh</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stat 2: Tap Connections -->
+          <div class="col-xl-3 col-md-6 col-sm-6 col-12">
+            <div class="stat-item-box">
+              <div class="stat-icon-wrap">
+                <i class="bi bi-droplet-half"></i>
+              </div>
+              <div class="stat-content">
+                <div class="stat-digit-wrap">
+                  <span class="stat-number">2.1</span>
+                  <span class="stat-unit">Crore+</span>
+                </div>
+                <h4 class="stat-label">Rural Tap Lines</h4>
+                <p class="stat-subtext">Functional Household Taps</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stat 3: STPs & WTPs -->
+          <div class="col-xl-3 col-md-6 col-sm-6 col-12">
+            <div class="stat-item-box">
+              <div class="stat-icon-wrap">
+                <i class="bi bi-building-gear"></i>
+              </div>
+              <div class="stat-content">
+                <div class="stat-digit-wrap">
+                  <span class="stat-number">350</span>
+                  <span class="stat-unit">+</span>
+                </div>
+                <h4 class="stat-label">STPs &amp; WTPs</h4>
+                <p class="stat-subtext">Active Treatment Units</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stat 4: Resolution -->
+          <div class="col-xl-3 col-md-6 col-sm-6 col-12">
+            <div class="stat-item-box">
+              <div class="stat-icon-wrap">
+                <i class="bi bi-patch-check-fill"></i>
+              </div>
+              <div class="stat-content">
+                <div class="stat-digit-wrap">
+                  <span class="stat-number">100</span>
+                  <span class="stat-unit">%</span>
+                </div>
+                <h4 class="stat-label">Grievance Redressal</h4>
+                <p class="stat-subtext">Online Jansunwai Integration</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SECTION: FLAGSHIP INFRASTRUCTURE SCHEMES
+         ================================================================= -->
+    <section class="schemes-section" id="schemes">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="schemes-header-wrap">
+          <div class="header-text-block">
+            <span class="sub-badge">State &amp; National Programs</span>
+            <h2 class="section-heading">Flagship Infrastructure Initiatives</h2>
+            <div class="title-decor-line"></div>
+            <p class="section-subtext">
+              Executing statewide water security, pipeline distribution
+              networks, and river conservation projects.
+            </p>
+          </div>
+          <div class="header-action-block">
+            <a href="#" class="btn-schemes-all"
+              >View All Guidelines <i class="bi bi-arrow-up-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- 3 Cards Layout -->
+        <div class="row g-4">
+          <!-- Scheme 1: Jal Jeevan Mission -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="scheme-card">
+              <div class="scheme-banner banner-navy">
+                <div class="banner-icon">
+                  <i class="bi bi-house-heart-fill"></i>
+                </div>
+                <h3 class="scheme-title">Jal Jeevan Mission (Rural)</h3>
+                <span class="scheme-tagline">Har Ghar Nal Se Jal</span>
+              </div>
+              <div class="scheme-content">
+                <p class="scheme-intro">
+                  Providing Functional Household Tap Connections (FHTC) to every
+                  rural household across all 75 revenue districts.
+                </p>
+                <ul class="scheme-points">
+                  <li>
+                    <i class="bi bi-check2-circle"></i> 100% saturation for
+                    rural primary schools &amp; Anganwadi centres.
+                  </li>
+                  <li>
+                    <i class="bi bi-check2-circle"></i> Village Water &amp;
+                    Sanitation Committee (VWSC) community participation.
+                  </li>
+                  <li>
+                    <i class="bi bi-check2-circle"></i> Real-time solar pump and
+                    IoT sensor pressure monitoring.
+                  </li>
+                </ul>
+                <div class="scheme-card-footer">
+                  <a href="#" class="scheme-link"
+                    >Project Guidelines &amp; DPR &rarr;</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Scheme 2: AMRUT 2.0 -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="scheme-card">
+              <div class="scheme-banner banner-teal">
+                <div class="banner-icon">
+                  <i class="bi bi-buildings-fill"></i>
+                </div>
+                <h3 class="scheme-title">AMRUT 2.0 (Urban Water)</h3>
+                <span class="scheme-tagline"
+                  >Universal Piped Supply in Towns</span
+                >
+              </div>
+              <div class="scheme-content">
+                <p class="scheme-intro">
+                  Ensuring universal coverage of drinking water supply and
+                  scientific sewerage networks in municipal corporations.
+                </p>
+                <ul class="scheme-points">
+                  <li>
+                    <i class="bi bi-check2-circle"></i> Circular water economy
+                    through treated sewage reuse for gardening/industry.
+                  </li>
+                  <li>
+                    <i class="bi bi-check2-circle"></i> Restoration and
+                    de-silting of historic urban water bodies and lakes.
+                  </li>
+                  <li>
+                    <i class="bi bi-check2-circle"></i> Implementation of DMA
+                    smart bulk flow metering to cut water losses.
+                  </li>
+                </ul>
+                <div class="scheme-card-footer">
+                  <a href="#" class="scheme-link"
+                    >Urban Project Framework &rarr;</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Scheme 3: Namami Gange -->
+          <div class="col-lg-4 col-md-12 col-12">
+            <div class="scheme-card">
+              <div class="scheme-banner banner-slate">
+                <div class="banner-icon"><i class="bi bi-water"></i></div>
+                <h3 class="scheme-title">Namami Gange Project</h3>
+                <span class="scheme-tagline"
+                  >Pollution Abatement &amp; River Basin</span
+                >
+              </div>
+              <div class="scheme-content">
+                <p class="scheme-intro">
+                  Intercepting untreated drain discharges and setting up
+                  advanced Sewage Treatment Plants along the Ganga &amp; Yamuna
+                  river basins.
+                </p>
+                <ul class="scheme-points">
+                  <li>
+                    <i class="bi bi-check2-circle"></i> Construction of
+                    multi-stage biological nutrient removal (BNR) STPs.
+                  </li>
+                  <li>
+                    <i class="bi bi-check2-circle"></i> Interception &amp;
+                    Diversion (I&amp;D) networks preventing river pollution.
+                  </li>
+                  <li>
+                    <i class="bi bi-check2-circle"></i> 24x7 SCADA online
+                    effluent quality telemetry directly connected to CPCB.
+                  </li>
+                </ul>
+                <div class="scheme-card-footer">
+                  <a href="#" class="scheme-link"
+                    >STP Operational Status &rarr;</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SECTION: E-PROCUREMENT, TENDERS & NOTICES (TABBED)
+         ================================================================= -->
+    <section class="tenders-section" id="tenders">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="tenders-header-wrap">
+          <div class="header-text-block">
+            <span class="sub-badge">Transparency Portal</span>
+            <h2 class="section-heading">E-Procurement &amp; Notifications</h2>
+            <div class="title-decor-line"></div>
+            <p class="section-subtext">
+              Access competitive bidding notices, department office orders, and
+              career selection lists.
+            </p>
+          </div>
+          <div class="header-action-block">
+            <a
+              href="https://etender.up.nic.in"
+              target="_blank"
+              rel="noopener"
+              class="btn-portal-link"
+            >
+              <i class="bi bi-box-arrow-up-right"></i> UP e-Tender Portal
+            </a>
+          </div>
+        </div>
+
+        <!-- Custom Tab Navigation -->
+        <div class="tabs-control-bar">
+          <button
+            type="button"
+            class="tab-btn active"
+            data-target="tab-tenders"
+          >
+            <i class="bi bi-file-earmark-text"></i> Active Tenders
+          </button>
+          <button type="button" class="tab-btn" data-target="tab-circulars">
+            <i class="bi bi-journal-bookmark"></i> Office Orders &amp; Circulars
+          </button>
+          <button type="button" class="tab-btn" data-target="tab-recruitment">
+            <i class="bi bi-person-badge"></i> Recruitment &amp; Results
+          </button>
+        </div>
+
+        <!-- Tab Content Panes Container -->
+        <div class="tabs-display-box">
+          <!-- Pane 1: Active Tenders -->
+          <div class="tab-pane-content active" id="tab-tenders">
+            <div class="table-responsive-wrapper">
+              <table class="custom-data-table">
+                <thead>
+                  <tr>
+                    <th style="width: 80px">S.No.</th>
+                    <th style="width: 220px">Tender Reference</th>
+                    <th>Scope of Work &amp; Location</th>
+                    <th style="width: 170px">Closing Date</th>
+                    <th style="width: 150px; text-align: right">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>01</strong></td>
+                    <td><span class="ref-badge">UPJN/ENG/2026/102</span></td>
+                    <td class="work-title">
+                      Supply, installation, testing and commissioning of
+                      centrifugal pump sets in Division Lucknow.
+                    </td>
+                    <td><span class="badge-closing-date">28-Oct-2026</span></td>
+                    <td style="text-align: right">
+                      <a
+                        href="#"
+                        class="btn-pdf-download"
+                        title="Download NIT Document"
+                      >
+                        <i class="bi bi-file-earmark-pdf-fill"></i> PDF (1.2 MB)
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>02</strong></td>
+                    <td><span class="ref-badge">UPJN/SEW/2026/89</span></td>
+                    <td class="work-title">
+                      Laying and jointing of 450mm RCC trunk sewer pipeline at
+                      Sector 14, Zone-B, Ghaziabad.
+                    </td>
+                    <td><span class="badge-closing-date">02-Nov-2026</span></td>
+                    <td style="text-align: right">
+                      <a
+                        href="#"
+                        class="btn-pdf-download"
+                        title="Download NIT Document"
+                      >
+                        <i class="bi bi-file-earmark-pdf-fill"></i> PDF (840 KB)
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>03</strong></td>
+                    <td><span class="ref-badge">UPJN/JJM/2026/512</span></td>
+                    <td class="work-title">
+                      Construction of 50,000 Gallon RCC Overhead Tank and
+                      distribution pipeline in Varanasi rural cluster.
+                    </td>
+                    <td><span class="badge-closing-date">08-Nov-2026</span></td>
+                    <td style="text-align: right">
+                      <a
+                        href="#"
+                        class="btn-pdf-download"
+                        title="Download NIT Document"
+                      >
+                        <i class="bi bi-file-earmark-pdf-fill"></i> PDF (2.4 MB)
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>04</strong></td>
+                    <td><span class="ref-badge">UPJN/STP/2026/34</span></td>
+                    <td class="work-title">
+                      Annual Comprehensive Maintenance Contract (CMC) for 15 MLD
+                      Sewage Treatment Plant at Prayagraj.
+                    </td>
+                    <td><span class="badge-closing-date">15-Nov-2026</span></td>
+                    <td style="text-align: right">
+                      <a
+                        href="#"
+                        class="btn-pdf-download"
+                        title="Download NIT Document"
+                      >
+                        <i class="bi bi-file-earmark-pdf-fill"></i> PDF (1.6 MB)
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="table-pane-footer">
+              <span class="showing-text"
+                >Showing latest 4 active tenders out of 24 open notices</span
+              >
+              <a href="#" class="btn-view-archive"
+                >View Tender Archives &rarr;</a
+              >
+            </div>
+          </div>
+
+          <!-- Pane 2: Circulars & Orders -->
+          <div class="tab-pane-content" id="tab-circulars">
+            <div class="table-responsive-wrapper">
+              <table class="custom-data-table">
+                <thead>
+                  <tr>
+                    <th style="width: 80px">S.No.</th>
+                    <th style="width: 220px">Order Number</th>
+                    <th>Subject Matter</th>
+                    <th style="width: 170px">Issue Date</th>
+                    <th style="width: 150px; text-align: right">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>01</strong></td>
+                    <td><span class="ref-badge">JN/HQ/2026/45</span></td>
+                    <td class="work-title">
+                      Revised protocol and sampling guidelines for water testing
+                      labs during upcoming summer months.
+                    </td>
+                    <td>01-Oct-2026</td>
+                    <td style="text-align: right">
+                      <a href="#" class="btn-pdf-download"
+                        ><i class="bi bi-download"></i> View (420 KB)</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>02</strong></td>
+                    <td><span class="ref-badge">JN/EST/2026/12</span></td>
+                    <td class="work-title">
+                      Seniority list of Assistant Engineers (Civil &amp;
+                      Mechanical) working under Urban Works wing.
+                    </td>
+                    <td>22-Sep-2026</td>
+                    <td style="text-align: right">
+                      <a href="#" class="btn-pdf-download"
+                        ><i class="bi bi-download"></i> View (1.1 MB)</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Pane 3: Recruitment & Results -->
+          <div class="tab-pane-content" id="tab-recruitment">
+            <div class="empty-status-box">
+              <i class="bi bi-info-circle-fill"></i>
+              <h4>No Active Examination or Recruitment Today</h4>
+              <p>
+                Selection notifications and admit card releases for technical
+                and managerial cadres are published via the UP Subordinate
+                Services Board.
+              </p>
+              <a href="#" class="btn-portal-link" style="margin-top: 10px"
+                >Check Past Results Archive</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SECTION: LEADERSHIP DESK & ABOUT NIGAM
+         ================================================================= -->
+    <section class="about-leadership-section">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <!-- Left Column: Leadership Card -->
+          <div class="col-lg-4 col-md-5 col-12">
+            <div class="leader-profile-card">
+              <div class="leader-avatar-wrap">
+                <!-- Clean placeholder icon/avatar for official portrait -->
+                <div class="leader-avatar">
+                  <i class="bi bi-person-fill"></i>
+                </div>
+                <span class="leader-status-badge">IAS</span>
+              </div>
+              <div class="leader-meta">
+                <h3 class="leader-name">Managing Director</h3>
+                <span class="leader-designation"
+                  >U.P. Jal Nigam (Urban &amp; Rural)</span
+                >
+                <p class="leader-quote">
+                  "Our mission is to guarantee safe, piped drinking water to
+                  every doorstep and build resilient environmental sanitation
+                  systems for future generations."
+                </p>
+                <div class="leader-contact-link">
+                  <a href="#"
+                    ><i class="bi bi-envelope-at-fill"></i>
+                    md@upjalnigam.gov.in</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: About Overview -->
+          <div class="col-lg-8 col-md-7 col-12">
+            <div class="about-content-box">
+              <span class="sub-badge">Mandate &amp; Constitution</span>
+              <h2 class="section-heading">About Uttar Pradesh Jal Nigam</h2>
+              <div class="title-decor-line"></div>
+
+              <p class="about-text-lead">
+                Constituted in 1975 under the Uttar Pradesh Water Supply and
+                Sewerage Act, U.P. Jal Nigam is the premier statutory
+                engineering organisation responsible for the development and
+                regulation of water supply and sewerage services across the
+                state.
+              </p>
+
+              <div class="about-highlights-grid">
+                <div class="highlight-item">
+                  <i class="bi bi-compass-fill"></i>
+                  <div>
+                    <h4>Statewide Execution</h4>
+                    <p>
+                      Planning, survey, design, and commissioning of macro-level
+                      water supply grids and sewerage works.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="highlight-item">
+                  <i class="bi bi-tree-fill"></i>
+                  <div>
+                    <h4>Ecological Preservation</h4>
+                    <p>
+                      Operating over 350 wastewater treatment plants to
+                      rejuvenate major river basins and local wetlands.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="highlight-item">
+                  <i class="bi bi-people-fill"></i>
+                  <div>
+                    <h4>Citizen Accountability</h4>
+                    <p>
+                      Ensuring transparent service level standards under the
+                      Right to Information and Citizen's Charter.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="about-action-wrap">
+                <a href="#" class="btn-read-charter">
+                  Read Citizen's Charter <i class="bi bi-arrow-right"></i>
+                </a>
+                <a href="#" class="btn-org-hierarchy">
+                  Organizational Hierarchy
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         FOOTER: OFFICIAL GOVERNMENT PORTAL FOOTER
+         ================================================================= -->
+    <footer class="site-main-footer" id="contact">
+      <!-- Top Footer Information & Navigation Links -->
+      <div class="footer-top-wrap">
+        <div class="container">
+          <div class="row g-4">
+            <!-- Col 1: Brand Identity & Physical Headquarters -->
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="footer-col-identity">
+                <div class="footer-brand-logo">
+                  <img
+                    src="assets/upjn-logo.png"
+                    alt="UP Jal Nigam Logo"
+                    class="footer-logo-img"
+                  />
+                  <span>उत्तर प्रदेश जल निगम</span>
+                </div>
+                <p class="footer-mission-text">
+                  Apex statutory department dedicated to providing clean, tested
+                  tap water and advanced municipal sewerage management for the
+                  well-being of citizens in Uttar Pradesh.
+                </p>
+                <div class="footer-hq-address">
+                  <p>
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <span
+                      ><strong>Head Office:</strong> 6, Rana Pratap Marg,
+                      Hazratganj, Lucknow, UP – 226001</span
+                    >
+                  </p>
+                  <p>
+                    <i class="bi bi-envelope-fill"></i>
+                    <span
+                      ><strong>Email:</strong> contact@upjalnigam.gov.in</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Col 2: Citizen Services Links -->
+            <div class="col-lg-2 col-md-6 col-6">
+              <div class="footer-links-group">
+                <h4 class="footer-title">Citizen Corner</h4>
+                <ul class="footer-list">
+                  <li>
+                    <a href="#services"
+                      ><i class="bi bi-chevron-right"></i> Pay Water Bill</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#services"
+                      ><i class="bi bi-chevron-right"></i> Apply Tap
+                      Connection</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#services"
+                      ><i class="bi bi-chevron-right"></i> Sewerage
+                      Permission</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#services"
+                      ><i class="bi bi-chevron-right"></i> Jansunwai
+                      Grievance</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#services"
+                      ><i class="bi bi-chevron-right"></i> Water Quality Lab</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="bi bi-chevron-right"></i> Citizen's Charter</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Col 3: Key Govt Portals & Department Links -->
+            <div class="col-lg-3 col-md-6 col-6">
+              <div class="footer-links-group">
+                <h4 class="footer-title">Official Portals</h4>
+                <ul class="footer-list">
+                  <li>
+                    <a href="https://up.gov.in" target="_blank" rel="noopener"
+                      ><i class="bi bi-chevron-right"></i> Govt. of Uttar
+                      Pradesh</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://ejalshakti.gov.in"
+                      target="_blank"
+                      rel="noopener"
+                      ><i class="bi bi-chevron-right"></i> Ministry of Jal
+                      Shakti</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://jansunwai.up.nic.in"
+                      target="_blank"
+                      rel="noopener"
+                      ><i class="bi bi-chevron-right"></i> Jansunwai (IGRS
+                      UP)</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://etender.up.nic.in"
+                      target="_blank"
+                      rel="noopener"
+                      ><i class="bi bi-chevron-right"></i> UP e-Procurement</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="bi bi-chevron-right"></i> Monthly Progress
+                      Report</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="bi bi-chevron-right"></i> Right to Information
+                      (RTI)</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Col 4: Help Desk & Timings -->
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="footer-helpdesk-card">
+                <h4 class="helpdesk-title">
+                  <i class="bi bi-headset"></i> 24x7 Citizen Support
+                </h4>
+                <div class="toll-number-wrap">
+                  <span class="toll-label">Toll Free Helpline</span>
+                  <a href="tel:18001805678" class="toll-digits"
+                    >1800-180-5678</a
+                  >
+                </div>
+                <div class="office-timings">
+                  <span class="timing-label">Headquarters Timings:</span>
+                  <p>
+                    Monday to Saturday: 9:30 AM – 6:00 PM<br />(2nd &amp; 4th
+                    Saturday Closed)
+                  </p>
+                </div>
+                <div class="footer-emergency-note">
+                  <i class="bi bi-exclamation-triangle-fill"></i>
+                  <span
+                    >For pipeline burst or contamination, call
+                    immediately.</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Copyright & Compliance Strip -->
+      <div class="footer-bottom-strip">
+        <div class="container">
+          <div class="strip-content-wrap">
+            <div class="strip-left">
+              <p>&copy; 2026 Uttar Pradesh Jal Nigam. All Rights Reserved.</p>
+            </div>
+            <div class="strip-right">
+              <span class="compliance-badge">
+                <i class="bi bi-shield-check"></i> WCAG 2.1 Level AA Compliant
+              </span>
+              <span class="sep-dot"><i class="bi bi-dot"></i></span>
+              <a href="#">Website Policies</a>
+              <span class="sep-dot"><i class="bi bi-dot"></i></span>
+              <a href="#">Terms of Use</a>
+              <span class="sep-dot"><i class="bi bi-dot"></i></span>
+              <span class="update-text">Last Updated: 08-Oct-2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

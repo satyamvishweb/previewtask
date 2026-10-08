@@ -1,0 +1,252 @@
+/* ==========================================================================
+   RESPONSIVE (HEADER & NAV)
+   ========================================================================== */
+@media (max-width: 991px) {
+    header.brand-header .brand-badges {
+        display: none;
+    }
+
+    nav.main-navbar .menu-toggle {
+        display: block;
+    }
+
+    nav.main-navbar .nav-menu {
+        display: none;
+        position: absolute;
+        top: 54px;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-dark-navy);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px 20px;
+        gap: 10px;
+    }
+
+    nav.main-navbar .nav-menu.open {
+        display: flex;
+    }
+
+    nav.main-navbar .nav-link {
+        width: 100%;
+    }
+
+    nav.main-navbar .nav-search {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    header.top-utility .utility-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    header.brand-header .brand-title {
+        font-size: 16px;
+    }
+}
+
+
+/* Responsive adjustments for Citizen Services */
+@media (max-width: 991px) {
+    section.services-section {
+        padding: 48px 0;
+    }
+
+    section.services-section .section-heading {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 575px) {
+    section.services-section {
+        padding: 36px 0;
+    }
+
+    section.services-section .service-box {
+        padding: 20px 16px;
+    }
+}
+
+
+/* ==========================================================================
+   RESPONSIVE: HERO
+   ========================================================================== */
+@media (max-width: 991px) {
+    section.hero-section {
+        padding: 44px 0;
+    }
+
+    section.hero-section .hero-content {
+        padding-right: 0;
+        margin-bottom: 32px;
+    }
+
+    section.hero-section .hero-title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    section.hero-section .hero-title {
+        font-size: 24px;
+    }
+
+    section.hero-section .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    section.hero-section .btn-hero-primary,
+    section.hero-section .btn-hero-secondary {
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+
+/* Responsive adjustments for Stats Section */
+@media (max-width: 991px) {
+    section.stats-counter-section {
+        padding: 36px 0;
+    }
+
+    section.stats-counter-section .stat-item-box {
+        padding: 10px 14px;
+    }
+
+    section.stats-counter-section .stat-number {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 575px) {
+    section.stats-counter-section {
+        padding: 28px 0;
+    }
+
+    section.stats-counter-section .stat-item-box {
+        flex-direction: row;
+        gap: 12px;
+    }
+}
+
+
+/* Responsive adjustments for Stats Section */
+@media (max-width: 991px) {
+    section.stats-counter-section {
+        padding: 36px 0;
+    }
+
+    section.stats-counter-section .stat-item-box {
+        padding: 10px 14px;
+    }
+
+    section.stats-counter-section .stat-number {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 575px) {
+    section.stats-counter-section {
+        padding: 28px 0;
+    }
+
+    section.stats-counter-section .stat-item-box {
+        flex-direction: row;
+        gap: 12px;
+    }
+}
+
+
+/* Responsive adjustments for Flagship Schemes */
+@media (max-width: 991px) {
+    section.schemes-section {
+        padding: 48px 0;
+    }
+
+    section.schemes-section .schemes-header-wrap {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 28px;
+    }
+}
+
+@media (max-width: 575px) {
+    section.schemes-section {
+        padding: 36px 0;
+    }
+
+    section.schemes-section .section-heading {
+        font-size: 24px;
+    }
+}
+
+
+/* Responsive adjustments for Leadership & About Section */
+@media (max-width: 991px) {
+    section.about-leadership-section {
+        padding: 48px 0;
+    }
+
+    section.about-leadership-section .about-content-box {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 575px) {
+    section.about-leadership-section {
+        padding: 36px 0;
+    }
+
+    section.about-leadership-section .section-heading {
+        font-size: 24px;
+    }
+
+    section.about-leadership-section .about-action-wrap {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    section.about-leadership-section .btn-read-charter,
+    section.about-leadership-section .btn-org-hierarchy {
+        justify-content: center;
+    }
+}
+
+/* Responsive adjustments for Main Footer */
+@media (max-width: 991px) {
+    footer.site-main-footer .footer-top-wrap {
+        padding: 40px 0 28px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    footer.site-main-footer .strip-content-wrap {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 767px) {
+    header.brand-header .brand-identity {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    header.brand-header .img-up-seal {
+        width: 44px;
+        height: 44px;
+    }
+
+    header.brand-header .img-upjn-logo {
+        height: 38px;
+    }
+
+    header.brand-header .brand-divider {
+        display: none;
+    }
+}
